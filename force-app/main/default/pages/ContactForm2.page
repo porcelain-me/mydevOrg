@@ -1,0 +1,50 @@
+<apex:page standardController="Contact">
+  <!-- Page Header -->  <apex:sectionHeader title="Details Page" subtitle="Welcome to CUNA Mutual Group" />
+  <apex:image value="http://bit.ly/17iLknp" styleClass="logo" />
+  <!-- Begin Form -->
+  <apex:form >    <apex:pageBlock title="About us" mode="edit">
+      <!-- SFDC99 Rules -->      <apex:outputPanel styleClass="rules">  
+        <font size ="2">CUNA Mutual Group is a mutual insurance company that provides financial services to cooperatives, credit unions, their members, and other customers worldwide. CUNA Mutual Group sells commercial and consumer insurance and protection products.
+CUNA Mutual Group provides retirement plan services to small businesses and credit union employees. The Madison, Wisconsin-based company also provides auto, home, life and loan protection products to credit union members through its TruStage brand.
+</font><br /><br /> 
+      <!--  iframe width="320" height="180" src="https://www.youtube.com/embed/lsSC2vx7zFQ" /-->
+      </apex:outputPanel>
+      
+      <script>
+      console.log('hello aniketfrom javascript')
+      </script>
+      <!-- Fields -->      <apex:pageBlockSection columns="3" showHeader="true" title="Come Be a Part of us">
+        <!--:inputField value="{!contact.Status__c}" required="true" /-->
+        <apex:inputField value="{!contact.FirstName}" required="true" />
+        <apex:inputField value="{!contact.LastName}"  required="true" />
+        <apex:inputField value="{!contact.Email}"     required="true" />
+        <div>
+        <apex:inputField value="{!contact.Birthdate}" required="true" />
+        <apex:inputField value="{!contact.CleanStatus}"  required="true" />
+        <apex:inputField value="{!contact.Department}"     required="true" />
+        </div>
+              </apex:pageBlockSection>
+      <!-- Button Section -->      <apex:pageBlockButtons location="bottom">
+        <apex:commandButton value="Submit" action="{!save}"/>
+        <apex:commandButton value="Clear" action="{!cancel}" /> 
+       
+              </apex:pageBlockButtons>
+    </apex:pageBlock>
+  </apex:form>
+  <!-- CSS -->
+  <style>
+    .logo {
+      float: right;
+      width: 60px;
+      margin: -65px 20px 0 0;
+    }
+    .rules {
+      color: black;
+      font-size: 18px;
+      font-family: Courier;      
+      margin: 10px 0 10px 30px;
+      float: left;
+      width: 100%;
+    }
+  </style>
+</apex:page>

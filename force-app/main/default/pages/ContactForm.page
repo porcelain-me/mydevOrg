@@ -1,0 +1,14 @@
+<apex:page standardController="contact" recordSetVar="Contacts">
+    
+    <apex:form >
+        <apex:dataList var="a" value="{!contacts}" type="1">
+    <apex:outputField label="FirstName" value="{!a.firstname}"/>
+     
+        <apex:outputField label="LastName" value="{!a.lastname}"/>
+        <apex:outputfield label="MailingCity" value="{!a.MailingCity}"/>
+    
+         </apex:dataList>>
+         <apex:commandButton value="Next" action="{!next}"/>
+         <apex:commandButton value="Previous" action="{!previous}"/>
+        </apex:form>
+</apex:page>

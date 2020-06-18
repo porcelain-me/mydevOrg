@@ -1,0 +1,19 @@
+<apex:page standardController="Contact" sidebar="False"  showHeader="false" >
+    <apex:pageBlock > 
+        <apex:pageBlockSection columns="2"> 
+            FirstName: {!Contact.FirstName} <br/>
+         LastName : {!Contact.LastName} <br/>
+         Email    : {!Contact.Owner.email} <br/>
+          Mailing City: {!Contact.MailingCity} <br/>
+          <!--  Details: <apex:detail /> -->
+        </apex:pageBlockSection> 
+        
+         <apex:pageBlockSection title="New Section"  columns="2"> 
+            FirstName: {!Contact.FirstName} <br/>
+         LastName : {!Contact.LastName} <br/>
+         Email    : {!Contact.Owner.email} <br/>
+          Mailing City: {!Contact.MailingCity} <br/>
+          <!--  Details: <apex:detail /> -->
+        </apex:pageBlockSection> 
+    </apex:pageBlock>
+</apex:page>

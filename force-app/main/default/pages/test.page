@@ -1,0 +1,16 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+   <apex:form >
+   
+   
+   <script type='text/javascript' src='https://c.la1-c2-ukb.salesforceliveagent.com/content/g/js/46.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1-c2-ukb.salesforceliveagent.com/chat', '5726F000000ClnE', '00D6F000001N7Rf');
+</script>
+      <!-- <apex:selectList value="{!filterid}" size="1">
+           <apex:selectOptions value="{!listviewoptions}"/>
+       </apex:selectList>
+       <apex:commandButton value="Go" action="{!list}"/> -->
+       
+       <apex:commandButton value="Go" onclick="liveagent.init()"/>
+   </apex:form>
+</apex:page>

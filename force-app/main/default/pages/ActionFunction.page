@@ -1,0 +1,36 @@
+<apex:page controller="exampleCon">
+    <apex:form >
+        <!-- Define the JavaScript function sayHello-->
+        <apex:actionFunction name="sayHello" action="{!sayHello}" rerender="out" status="myStatus"/>
+        <h1> Action Function and Action Status Example by Saurabh </h1>
+        <br/> Please see the below example of action function and action status  
+    </apex:form>
+
+    <apex:outputPanel id="out">
+    <br/>
+    <apex:outputText value="Hello "/>
+    <apex:actionStatus startText="requesting..." id="myStatus">
+        <apex:facet name="stop">{!username}</apex:facet>
+    </apex:actionStatus>
+    </apex:outputPanel>
+            
+    <!-- Call the sayHello JavaScript function using a script element-->
+    <script>window.setTimeout(sayHello,5000)</script>
+            
+    <p><apex:outputText value="Clicked? {!state}" id="showstate" /></p> 
+            
+    <!-- Add the onclick event listener to a panel. When clicked, the panel triggers
+    the methodOneInJavascript actionFunction with a param -->
+    <apex:outputPanel onclick="methodOneInJavascript('Yes!')" styleClass="btn"> 
+        Click Me 
+    </apex:outputPanel>
+    <apex:form >
+
+    <apex:actionFunction action="{!methodOne}" name="methodOneInJavascript" rerender="showstate">
+        <apex:param name="firstParam" assignTo="{!state}" value="" />
+    </apex:actionFunction>
+     <br/>
+    <apex:outputText value="Watch this counter by Action Poller: {!count}" id="counter"/>
+        <apex:actionPoller action="{!incrementCounter}" reRender="counter" interval="05"/>
+    </apex:form>
+</apex:page>

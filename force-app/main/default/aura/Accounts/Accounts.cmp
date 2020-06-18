@@ -1,0 +1,17 @@
+<aura:component >
+<aura:attribute name="account" type="Account" />
+<lightning:card variant="Narrow" title="{!v.account.Name}"
+iconName="standard:account">
+<aura:set attribute="actions">
+<lightning:button name="details" label="Details" onclick="{!c.goToRecord}"
+/>
+</aura:set>
+<aura:set attribute="footer">
+<lightning:badge label="{!v.account.AccountNumber}"/>
+</aura:set>
+<p class="slds-p-horizontal--small">
+{!v.account.Id}
+</p>
+
+</lightning:card>
+</aura:component>

@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable">
+	<!--hello world
+    <div class="container">
+        <table><tr><th>New table </th></tr>
+            <td>Phone </td></table>
+Other HTML tags or components here
+</div>  -->
+ <!--   
+<div class="white">
+Hello, HTML!
+</div>
+<h2>Check out the style in this list.</h2>
+<ul>
+<li class="red">I'm red.</li>
+<li class="blue">I'm blue.</li>
+<li class="green">I'm green.</li>
+</ul>
+-->
+    <ui:inputTextArea aura:id="name" label="Name"  value="{}" rows="2"/>
+    <ui:inputTextArea aura:id="Email" label="Email"  value="abc@xyz.com" rows="2"/>
+    <ui:inputTextArea aura:id="Address" label="Address"  value="" rows="2"/>
+    <ui:inputTextArea aura:id="Phone" label="Phone"  value="" rows="2"/>
+    <ui:inputTextArea aura:id="Gender" label="Gender"  value="" rows="2"/>
+    <ui:button class="btn" label="save" press="{!c.save_values}"/> <br/>
+    
+    
+    <aura:attribute name="whom" type="String" default="world"/>
+ {!v.whom}!
+</aura:component>

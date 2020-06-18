@@ -1,0 +1,13 @@
+<apex:page controller="VFSample" > 
+  <apex:form >
+  
+
+<h1>Congratulations {!$User.FirstName}  {!Name}</h1> <br/> 
+
+you are seeing the {!account.name}
+change the name: 
+<apex:inputField value="{!account.name}"/>
+<apex:commandButton action="{!Save}" value="Save Account"/>
+ 
+  </apex:form>
+</apex:page>

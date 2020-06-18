@@ -1,0 +1,18 @@
+<aura:component controller="SignatureController"  implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId">
+    
+    
+    
+    <ltng:require afterScriptsLoaded="{!c.Init}"/>
+    <div style="text-align: center;">
+    <div class="slds-text-heading_medium">Capture Signature</div>
+    </div>
+    <div style="text-align: center;">
+        
+        <canvas aura:id="can" style="border:2px solid #ddd;background: white;"></canvas>
+    </div>
+    <div style="text-align: center;margin: 7px;">
+        
+        <button class="slds-button slds-button_brand" onclick="{!c.erase}">Clear</button>
+        <button class="slds-button slds-button_brand" onclick="{!c.save}">Save</button>
+    </div>
+</aura:component>

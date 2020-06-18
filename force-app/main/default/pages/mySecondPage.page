@@ -1,0 +1,7 @@
+<apex:page controller="VFSample" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: mySecondPage
+  this is the updated Account Name{!account.name}
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

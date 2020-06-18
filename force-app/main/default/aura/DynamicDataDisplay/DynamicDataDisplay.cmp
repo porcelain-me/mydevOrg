@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable" >
+	 <lightning:button label="Toggle" onclick="{!c.toggle}"/>
+      
+    <p aura:id="text">Now you see me</p>
+    <lightning:button label="hidden" onclick="{!c.hidden}"/>
+      
+    <p aura:id="text">Now you see me again</p>
+      
+</aura:component>

@@ -1,0 +1,7 @@
+<apex:page >
+
+    <apex:canvasApp applicationName="myfirstjava123" 
+        height="100px" width="500px" 
+        border="2" scrolling="yes"/>
+
+</apex:page>

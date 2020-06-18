@@ -1,0 +1,78 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="parentId" type="String"/>
+
+    <lightning:notificationsLibrary aura:id="notificationsLibrary"/>
+    
+    <lightning:card iconName="standard:account" 
+                    title="{! (v.recordId == null ? 'Edit ' : 'New ') + 'Contact' }" aura:id="LtngCard">
+        
+        <lightning:recordEditForm aura:id="form"
+                                  recordId="{!v.recordId}"
+                                  objectApiName="Contact"     
+                                  onload="{!c.handleOnload}"
+                                  onsubmit="{!c.handleOnSubmit}"
+                                  onsuccess="{!c.handleOnSuccess}"
+                                  onerror="{!c.handleOnError}"
+                                  class="slds-card__body_inner">
+            
+            <lightning:messages/>
+            <lightning:input type="picklist" label="Email" name="email" value="A,B,C" aura:id="EmailHtml" />
+            <lightning:inputField fieldName="Email" aura:id="EmailId"/>
+            <lightning:inputField fieldName="Name"/>
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="AccountId" aura:id="accountLookup"/>
+            </div>
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Department" aura:id="departmentText"/>
+            </div>
+            
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Birthdate" aura:id="BirthdateId"/>
+            </div>
+            <div class="slds-m-top_large">
+                <lightning:button variant="brand" label="Submit" type="submit" />
+            </div>
+                        <div class="slds-m-top_large">
+            <lightning:inputField fieldName="AccountId" aura:id="accountLookup"/>
+            </div>
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Department" aura:id="departmentText"/>
+            </div>
+            
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Birthdate" aura:id="BirthdateId"/>
+            </div>
+            <div class="slds-m-top_large">
+                <lightning:button variant="brand" label="Submit" type="submit" />
+            </div>
+                        <div class="slds-m-top_large">
+            <lightning:inputField fieldName="AccountId" aura:id="accountLookup"/>
+            </div>
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Department" aura:id="departmentText"/>
+            </div>
+            
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Birthdate" aura:id="BirthdateId"/>
+            </div>
+            <div class="slds-m-top_large">
+                <lightning:button variant="brand" label="Submit" type="submit" />
+            </div>
+                        <div class="slds-m-top_large">
+            <lightning:inputField fieldName="AccountId" aura:id="accountLookup"/>
+            </div>
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Department" aura:id="departmentText"/>
+            </div>
+            
+            <div class="slds-m-top_large">
+            <lightning:inputField fieldName="Birthdate" aura:id="BirthdateId"/>
+            </div>
+            <div class="slds-m-top_large">
+                <lightning:button variant="brand" label="Submit" type="submit" />
+            </div>
+        </lightning:recordEditForm>
+        
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,17 @@
+<apex:page controller="EmailClass">
+  
+    <h1>Congratulations</h1>
+  This is your new Page: sendmail
+  <apex:form >
+  <apex:pageBlock >
+  <apex:pageBlockSection title="My Content Section" columns="1">
+  <apex:inputText value="{!inputValue}" label="Email" id="theTextInput"/>
+  <apex:inputText value="{!inputValue1}" id="theTextInput1"/>
+  <apex:inputText value="{!inputValue2}" id="theTextInput2"/>
+  <apex:inputText value="{!inputValue3}" id="theTextInput3"/>
+  </apex:pageBlockSection>
+  </apex:pageBlock>
+  <apex:commandButton action="{!emailsender}" value="Send Email" id="theButton"/>
+  </apex:form>
+  
+</apex:page>
