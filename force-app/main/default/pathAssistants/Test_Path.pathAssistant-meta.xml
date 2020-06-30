@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Test Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;This is good progress, Go beavers !!!&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Id. Decision Makers</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;This is third stage, So don&amp;#39;t enjoy much.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Needs Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;This is first stage, So don&amp;#39;t enjoy much.&lt;/p&gt;</info>
+        <picklistValueName>Prospecting</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;This is Second stage, So don&amp;#39;t enjoy much.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;This is fourth stage, So don&amp;#39;t enjoy much.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Value Proposition</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
