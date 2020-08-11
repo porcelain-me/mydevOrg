@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "lint:lwc",
+			"problemMatcher": [],
+			"label": "npm: lint:lwc",
+			"detail": "eslint force-app/main/default/lwc",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
